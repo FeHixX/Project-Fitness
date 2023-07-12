@@ -2,10 +2,10 @@
   background: $circular-gradient;
 
   &--position {
-    transform: translateY(-103px);
+    transform: translateY(-91px);
 
     @include vp-1199 {
-      transform: translateY(-99px);
+      transform: translateY(-97px);
     }
 
     @include vp-767 {
