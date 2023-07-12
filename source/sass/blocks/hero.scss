@@ -1,0 +1,28 @@
+.hero {
+  background: $circular-gradient;
+
+  &--position {
+    transform: translateY(-103px);
+
+    @include vp-1199 {
+      transform: translateY(-99px);
+    }
+
+    @include vp-767 {
+      transform: translateY(-56px);
+    }
+  }
+}
+
+.hero__container {
+  min-height: 658px;
+  padding: 51px 0;
+
+  @include vp-1199 {
+    padding: 82px 0;
+  }
+
+  @include vp-767 {
+    padding: 59px 0 78px;
+  }
+}
