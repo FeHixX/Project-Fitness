@@ -1,0 +1,156 @@
+.footer {
+  background-color: $color-black-russian;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 0 42px;
+
+  @include vp-1199 {
+    padding: 42px 0;
+  }
+
+  @include vp-767 {
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 48px 0 52px;
+  }
+}
+
+.footer__logo-link {
+  transform: translateY(6px);
+
+  @include vp-1199 {
+    transform: translate(1px, -1px);
+  }
+
+  @include vp-767 {
+    position: absolute;
+    left: 1px;
+    top: 41px;
+    transform: translate(0);
+  }
+}
+
+.footer__logo-link img {
+  width: 86px;
+  height: 17px;
+
+  @include vp-1199 {
+    width: 79px;
+    height: 30px;
+  }
+
+  @include vp-767 {
+    width: 65px;
+    height: 34px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  padding: 0;
+  margin: 0;
+  max-width: 470px;
+  list-style-type: none;
+  transform: translateX(6px);
+
+  @include vp-1199 {
+    gap: 30px;
+    transform: translateX(9px);
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". stocks" "services trainers" "subscriptions schedule";
+    gap: 15px 30px;
+    margin: 0 0 33px;
+    transform: translateX(0);
+
+    &::before {
+      content: "";
+      grid-area: 1/1/2/2;
+    }
+  }
+}
+
+.footer__item {
+  @include vp-767 {
+    &--services {
+      grid-area: services;
+    }
+
+    &--subscriptions {
+      grid-area: subscriptions;
+    }
+
+    &--stocks {
+      grid-area: stocks;
+    }
+
+    &--trainers {
+      grid-area: trainers;
+    }
+
+    &--schedule {
+      grid-area: schedule;
+    }
+  }
+}
+
+.footer__link {
+  position: relative;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: normal;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transition: background-color $trans-default;
+  }
+
+  @include hover {
+    &::after {
+      left: 0;
+      bottom: -7px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+    }
+  }
+
+  @include focus {
+    outline: none;
+
+    &::after {
+      top: -8px;
+      left: -11px;
+      border: 1px solid $color-default-white;
+      width: calc(100% + 21px);
+      height: 32px;
+    }
+  }
+
+  @include active {
+    &::after {
+      background-color: $color-transparent;
+    }
+  }
+
+  @include disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
