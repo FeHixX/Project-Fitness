@@ -1,28 +1,140 @@
 .hero {
-  background: $circular-gradient;
+  padding: 61px 0 41px;
+  background: $color-venetian-red $circular-gradient;
 
-  &--position {
-    transform: translateY(-91px);
+  @include vp-1199 {
+    padding: 63px 0 82px;
+  }
 
-    @include vp-1199 {
-      transform: translateY(-97px);
-    }
-
-    @include vp-767 {
-      transform: translateY(-56px);
-    }
+  @include vp-767 {
+    padding: 40px 0 80px;
   }
 }
 
 .hero__container {
-  min-height: 658px;
-  padding: 51px 0;
+  display: flex;
+  gap: 0 65px;
+  color: $color-default-white;
 
   @include vp-1199 {
-    padding: 82px 0;
+    justify-content: space-evenly;
+    padding: 19px 0 0;
+    gap: 0 30px;
   }
 
   @include vp-767 {
-    padding: 59px 0 78px;
+    display: block;
+  }
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  gap: 0 16px;
+
+  @include vp-1199 {
+    gap: 0 20px;
+  }
+}
+
+.hero__text {
+  margin: 295px 0 0;
+  width: 132px;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+
+  @include vp-1199 {
+    margin: 186px 0 0;
+    width: 113px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    left: -1px;
+    margin: 174px 0 0;
+  }
+}
+
+.hero__right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 101px 0 0;
+  width: 247px;
+
+  @include vp-1199 {
+    padding: 50px 0 0;
+    width: 191px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.hero__city {
+  margin: 0 49px 14px 0;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+
+  @include vp-1199 {
+    margin: 0 4px 7px 0;
+    font-size: 34px;
+    letter-spacing: 1.02px;
+  }
+
+  @include vp-767 {
+    margin: 0 3px 13px 0;
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+
+.hero__title {
+  margin: 0 0 50px;
+  font-size: 92px;
+  font-weight: 700;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  text-align: right;
+
+  @include vp-1199 {
+    margin: 0 0 38px;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 3.6px;
+    text-transform: inherit;
+  }
+
+  @include vp-767 {
+    margin: 0 0 24px;
+  }
+}
+
+.hero__button {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.hero__container img {
+  width: 500px;
+  height: 556px;
+  object-fit: cover;
+  transform: translateY(-10px);
+
+  @include vp-1199 {
+    width: 324px;
+    height: 390px;
+    transform: translateY(0);
+  }
+}
+
+.hero__container picture {
+  @include vp-767 {
+    display: none;
   }
 }

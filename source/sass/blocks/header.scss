@@ -1,56 +1,63 @@
 .header {
   position: relative;
-  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: $color-venetian-red;
+    z-index: -1;
+  }
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  align-items: center;
+  padding: 30px 0 0;
 
   @include vp-1199 {
-    padding: 34px 0;
+    padding: 34px 0 0;
   }
 
   @include vp-767 {
-    padding: 16px 0;
+    padding: 16px 0 0;
   }
 }
 
 .header__logo-link {
-  transform: translate(1px, 10px);
+  transition: opacity $trans-default;
 
-  @include vp-1199 {
-    transform: translate(1px, 6px);
+  @include hover-focus {
+    opacity: 0.5;
+    outline: none;
   }
 
-  @include vp-767 {
-    transform: translate(1px, 0);
+  @include active {
+    opacity: 0.7;
   }
 }
 
 .header__logo-link img {
-  width: 118px;
+  width: 119px;
   height: 23px;
 
   @include vp-1199 {
-    width: 79px;
-    height: 18px;
+    width: 81px;
+    height: 16px;
   }
 
   @include vp-767 {
-    width: 66px;
-    height: 22px;
+    width: 67px;
+    height: 13px;
   }
 }
 
 .header__tel {
-  color: $color-default-white;
-  font-family: $ff-alumni-sans;
   font-size: 26px;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 0.78px;
+  color: $color-default-white;
   transition: opacity $trans-default;
 
   @include vp-1199 {

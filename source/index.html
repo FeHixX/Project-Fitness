@@ -25,18 +25,31 @@
       <header class="header">
         <div class="container">
           <div class="header__container">
-            <a class="header__logo-link">
-              <img src="./img/logo/logo.svg" width="120" height="23" alt="Логотип сайта SUPERGYM.">
+            <a class="header__logo-link" href="#!">
+              <img src="./img/logo/logo.svg" width="119" height="23" alt="Логотип сайта SUPERGYM.">
             </a>
             <a class="header__tel" href="tel:+88005555555">8-800-555-55-55</a>
           </div>
         </div>
       </header>
       <main class="main">
-        <section class="hero hero--position">
+        <section class="main__hero hero">
           <div class="container">
             <div class="hero__container">
-              <h1>Фитнес центр</h1>
+              <div class="hero__content">
+                <p class="hero__text">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
+                <div class="hero__right-content">
+                  <p class="hero__city">омск</p>
+                  <h1 class="hero__title">Фитнес<br>центр</h1>
+                  <button class="hero__button button" type="button">Купить абонемент</button>
+                </div>
+              </div>
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/man-tablet@1x.webp 1x , ./img/hero/man-tablet@2x.webp 2x" width="324" height="390">
+                <source type="image/webp" srcset="./img/hero/man-desktop@1x.webp 1x, ./img/hero/man-desktop@2x.webp 2x" width="500" height="556">
+                <source media="(max-width: 1199px)" srcset="./img/hero/man-tablet@1x.jpg 1x, ./img/hero/man-tablet@2x.jpg 2x" width="324" height="390">
+                <img src="./img/hero/man-desktop@1x.jpg" srcset="./img/hero/man-desktop@2x.jpg" width="500" height="556" alt="Стройный мужчина в майке супермена.">
+              </picture>
             </div>
           </div>
         </section>
@@ -44,8 +57,8 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__container">
-            <a class="footer__logo-link">
-              <img src="./img/logo/logo.svg" width="88" height="32" alt="Логотип сайта SUPERGYM.">
+            <a class="footer__logo-link" href="#!">
+              <img src="./img/logo/logo.svg" width="88" height="17" alt="Логотип сайта SUPERGYM.">
             </a>
             <ul class="footer__list">
               <li class="footer__item footer__item--services">

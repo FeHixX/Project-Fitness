@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 12px;
   padding: 0;
@@ -9,6 +10,10 @@
 
   @include vp-1199 {
     gap: 11px;
+  }
+
+  @include vp-1199 {
+    justify-content: flex-start;
   }
 }
 
@@ -36,6 +41,6 @@
 
   @include disabled {
     opacity: 0.3;
-    cursor: default;
+    pointer-events: none;
   }
 }

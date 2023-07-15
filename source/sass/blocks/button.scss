@@ -1,0 +1,72 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 22px 56px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  color: $color-default-white;
+  background-color: $color-transparent;
+  box-shadow: inset 0 0 0 2px $color-default-white;
+  outline: 2px solid $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  transition:
+    all $trans-default,
+    padding 0s,
+    color 0s;
+
+  @include vp-1199 {
+    padding: 22px 33px;
+  }
+
+  @include vp-767 {
+    padding: 23px 33px;
+  }
+
+  @include hover-focus {
+    color: $color-egyptian-blue;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--secondary {
+    padding: 25px 45px;
+    color: $color-sapphire;
+    box-shadow: inset 0 0 0 1px $color-sapphire;
+    outline: 1px solid $color-sapphire;
+
+    @include hover-focus {
+      color: $color-default-white;
+      background: $button-gradient;
+      box-shadow: none;
+      outline: none;
+    }
+
+    @include active {
+      color: rgba($color-default-white, 0.7);
+      background: $button-gradient;
+      box-shadow: none;
+      outline: none;
+    }
+
+    @include disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+}
