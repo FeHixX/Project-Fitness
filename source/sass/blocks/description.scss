@@ -155,6 +155,12 @@
     inset: 0;
     background-color: rgba($color-sapphire, 0.5);
   }
+
+  &--play-video {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .description__player img {

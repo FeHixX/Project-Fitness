@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 
-import {smoothScroll} from './modules/smooth-scroll';
+import {isButtonSmoothScroll} from './modules/smooth-scroll';
+import {isButtonPlayVideo} from './modules/player';
 
 // ---------------------------------
 
@@ -22,7 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
-    smoothScroll();
+    isButtonSmoothScroll();
+    isButtonPlayVideo();
   });
 });
 

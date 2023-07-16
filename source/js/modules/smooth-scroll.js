@@ -1,4 +1,4 @@
-const smoothScroll = () => {
+const isButtonSmoothScroll = () => {
   const anchors = document.querySelectorAll('a[href*="#"]');
 
   anchors.forEach((anchor) => {
@@ -14,4 +14,4 @@ const smoothScroll = () => {
   });
 };
 
-export {smoothScroll};
+export {isButtonSmoothScroll};
