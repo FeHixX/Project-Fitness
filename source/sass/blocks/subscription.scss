@@ -1,0 +1,113 @@
+.subscription {
+  background-color: $color-ghost-white;
+}
+
+.subscription__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 121px 0 120px;
+
+  @include vp-1199 {
+    padding: 101px 0 99px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 69px;
+  }
+}
+
+.subscription__title {
+  margin: 0 0 16px;
+
+  @include vp-1199 {
+    margin: 0 0 19px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 20px;
+  }
+}
+
+.subscription__tabs {
+  position: relative;
+  display: flex;
+  margin: 0 0 51px;
+  padding: 0;
+  list-style-type: none;
+  gap: 0 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 100%;
+    height: 2px;
+    background-color: $color-sapphire;
+    opacity: 0.2;
+  }
+
+  @include vp-1199 {
+    margin: 0 0 57px;
+    gap: 0 55px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 48px;
+    gap: 0 45px;
+  }
+}
+
+.subscription__tab {
+  position: relative;
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $ff-roboto-condensed;
+  color: $color-sapphire;
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all $trans-default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 100%;
+    height: 2px;
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include hover-focus-active {
+    outline: none;
+    opacity: 1;
+
+    &::before {
+      background-color: $color-crimson;
+    }
+  }
+
+  @include disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &.is-active {
+    opacity: 1;
+
+    &::before {
+      background-color: $color-crimson;
+    }
+  }
+}

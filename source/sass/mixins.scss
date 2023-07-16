@@ -18,6 +18,12 @@
   }
 }
 
+@mixin focus-within {
+  &:focus-within:not([disabled]) {
+    @content;
+  }
+}
+
 @mixin active {
   &:active:not([disabled]) {
     @content;
@@ -42,6 +48,20 @@
 
 @mixin hover-active {
   @include hover {
+    @content;
+  }
+
+  @include active {
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  @include hover {
+    @content;
+  }
+
+  @include focus {
     @content;
   }
 
@@ -81,8 +101,6 @@
 //     @content;
 //   }
 // }
-
-// Desktop first
 
 // Desktop first
 

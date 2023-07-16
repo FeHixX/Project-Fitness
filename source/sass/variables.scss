@@ -14,6 +14,7 @@ $color-sapphire:                    #102654;
 $color-egyptian-blue:               #103aae;
 $color-whisper:                     #e8e8e8;
 $color-torch-red:                   #ed0233;
+$color-crimson:                     #d10a42;
 $color-resolution-blue:             #1c3374;
 $color-persian-blue:                #2e35ac;
 $color-black-russian:               #030a1a;
@@ -23,10 +24,10 @@ $color-venetian-red:                #b90128;
 // Gradient
 
 $circular-gradient:                 conic-gradient(from 162deg at 16.03% 39.06%, #003d85, #b80027 282deg, #003d85);
-$button-gradient:                   linear-gradient(150deg, #ed0233 0%, #003eb7 100%);
-$border-gradient:                   linear-gradient(to right bottom, #d10a42, #00359f);
+$button-gradient:                   linear-gradient(90deg, #ed0233 10%, #003eb7 100%);
+$border-gradient:                   linear-gradient(150deg, #d10a42, #00359f);
 $number-gradient:                   linear-gradient(to right bottom, #d10a42, #0041ca);
-$play-gradient:                     linear-gradient(to right top,#003d85 27%,#b80027 76%);
+$play-gradient:                     linear-gradient(to right top, #003d85 27%, #b80027 76%);
 
 // Typography
 // ---------------------------------
