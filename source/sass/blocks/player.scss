@@ -1,10 +1,10 @@
 .player {
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
     display: inline-block;
-    inset: 0;
     background-color: rgba($color-sapphire, 0.5);
+    inset: 0;
   }
 
   &--play-video {
@@ -20,33 +20,33 @@
 
 .player__button {
   position: absolute;
-  inset: 0;
-  margin: auto;
   width: 100px;
   height: 100px;
-  border: 2px solid rgb(237, 2, 51, 0.2);
-  border-radius: 100%;
+  margin: auto;
   color: $color-default-white;
   background-color: $color-transparent;
+  border: 2px solid rgb(237, 2, 51, 0.2);
+  border-radius: 100%;
   transition: all $trans-default;
+  inset: 0;
 
-  &::after {
-    position: absolute;
+  &::before {
     content: "";
-    inset: 0;
-    margin: auto;
+    position: absolute;
     width: 72px;
     height: 72px;
-    border-radius: 100%;
+    margin: auto;
     background-image: $play-gradient;
+    border-radius: 100%;
     transition: all $trans-default;
+    inset: 0;
   }
 
   @include vp-1199 {
     width: 73px;
     height: 73px;
 
-    &::after {
+    &::before {
       width: 52px;
       height: 52px;
     }
@@ -57,7 +57,7 @@
     border-color: $color-sapphire;
     outline: none;
 
-    &::after {
+    &::before {
       background: $color-default-white;
     }
   }
@@ -66,7 +66,7 @@
     color: $color-sapphire;
     border-color: $color-sapphire;
 
-    &::after {
+    &::before {
       width: 58px;
       height: 58px;
       background: $color-default-white;
@@ -79,12 +79,12 @@
   }
 
   @include disabled {
-    opacity: 0.4;
     color: $color-sapphire;
     border-color: $color-sapphire;
+    opacity: 0.4;
     pointer-events: none;
 
-    &::after {
+    &::before {
       background: $color-default-white;
     }
   }
@@ -92,9 +92,9 @@
 
 .player__icon {
   position: absolute;
-  inset: 0;
-  margin: auto;
   z-index: 1;
+  margin: auto;
+  inset: 0;
 
   @include vp-1199 {
     width: 9px;

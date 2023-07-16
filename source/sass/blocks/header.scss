@@ -1,12 +1,12 @@
 .header {
   position: relative;
 
-  &::after {
-    position: absolute;
+  &::before {
     content: "";
-    inset: 0;
-    background-color: $color-venetian-red;
+    position: absolute;
     z-index: -1;
+    background-color: $color-venetian-red;
+    inset: 0;
   }
 }
 
@@ -29,8 +29,8 @@
   transition: opacity $trans-default;
 
   @include hover-focus {
-    opacity: 0.5;
     outline: none;
+    opacity: 0.5;
   }
 
   @include active {
@@ -54,27 +54,27 @@
 }
 
 .header__tel {
-  font-size: 26px;
   font-weight: 600;
-  letter-spacing: 0.78px;
+  font-size: 26px;
   color: $color-default-white;
+  letter-spacing: 0.78px;
   transition: opacity $trans-default;
 
   @include vp-1199 {
-    font-size: 24px;
     font-weight: 700;
+    font-size: 24px;
     letter-spacing: 0.48px;
   }
 
   @include vp-767 {
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     letter-spacing: 0.4px;
   }
 
   @include hover-focus {
-    opacity: 0.5;
     outline: none;
+    opacity: 0.5;
   }
 
   @include active {
