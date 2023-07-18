@@ -1,0 +1,201 @@
+.trainers__container {
+  position: relative;
+  padding: 0 0 105px;
+
+  @include vp-1199 {
+    padding: 0 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 70px;
+  }
+}
+
+.trainers__title {
+  margin: 0 0 47px;
+
+  @include vp-1199 {
+    margin: 0 0 31px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin: 0 0 42px;
+  }
+}
+
+.trainers__content {
+  overflow: visible;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    right: 100%;
+    left: -10000px;
+    z-index: 2;
+    background-color: $color-default-white;
+  }
+
+  &::after {
+    left: 100%;
+    right: -5000px;
+  }
+
+  @include vp-1199 {
+    margin: 0 calc(50% - 283px);
+  }
+
+  @include vp-767 {
+    margin: 0 calc(50% - 113px);
+  }
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: $color-default-white;
+}
+
+.trainers__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  min-height: 294px;
+  padding: 52px 25px 48px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: rgba($color-sapphire, 0.89);
+    opacity: 0;
+    inset: 0;
+  }
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    min-height: 274px;
+    padding: 42px 22px 42px;
+  }
+}
+
+.trainers__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 294px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    height: 274px;
+  }
+}
+
+.trainers__subtitle {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  left: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $ff-roboto-condensed;
+  text-align: center;
+}
+
+.trainers__specialization {
+  margin: 0 0 29px;
+  line-height: 24px;
+  font-family: $ff-roboto-condensed;
+  text-align: center;
+  color: $color-spindle;
+  opacity: 0;
+}
+
+.trainers__achievements-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 110px;
+  margin: 0;
+  padding: 0 0 0 46px;
+  overflow-y: auto;
+  opacity: 0;
+  gap: 13px 0;
+
+  @include vp-767 {
+    padding: 0 0 0 28px;
+  }
+}
+
+.trainers__achievements-item {
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $ff-roboto-condensed;
+}
+
+.trainers__button {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+  transition: opacity $trans-default;
+
+  &--prev {
+    left: -75px;
+  }
+
+  &--next {
+    right: -75px;
+  }
+
+  @include vp-767 {
+    &--prev {
+      left: -47px;
+    }
+
+    &--next {
+      right: -47px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    opacity: 0;
+  }
+
+  @media (min-width: 1310px) {
+    opacity: 1;
+  }
+}
+
+.trainers__item:hover > * {
+  opacity: 1;
+  transition: opacity $trans-default;
+}
+
+.trainers__item:hover {
+  &::before {
+    opacity: 1;
+    transition: opacity $trans-default;
+  }
+}
+
+.trainers__item:hover .trainers__subtitle {
+  position: static;
+  animation: opacitys 0.3s;
+}

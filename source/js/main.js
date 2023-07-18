@@ -4,6 +4,7 @@ import {initTabs} from './modules/tabs/init-tabs';
 
 import {isButtonSmoothScroll} from './modules/smooth-scroll';
 import {isButtonPlayVideo} from './modules/player';
+import {initSliderTrainers} from './modules/trainers/slider';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     isButtonSmoothScroll();
     isButtonPlayVideo();
+    initSliderTrainers();
   });
 });
 
