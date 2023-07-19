@@ -10,6 +10,7 @@
   letter-spacing: 0.6px;
 
   border: none;
+  outline-offset: 0;
   cursor: pointer;
 
   &--main {
@@ -26,7 +27,6 @@
     @include hover-focus {
       color: $color-egyptian-blue;
       background-color: $color-default-white;
-      outline-offset: 0;
     }
 
     @include active {

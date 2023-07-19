@@ -26,12 +26,12 @@
   color: $color-black-russian;
   background-color: $color-default-white;
   border-radius: 50%;
+  outline: none;
   transition: all $trans-default;
 
   @include hover-focus {
     color: $color-default-white;
     background-color: $color-egyptian-blue;
-    outline: none;
   }
 
   @include active {

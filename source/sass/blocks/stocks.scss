@@ -2,11 +2,11 @@
   padding: 136px 0 120px;
 
   @include vp-1199 {
-    padding: 92px 0 120px;
+    padding: 92px 0 101px;
   }
 
   @include vp-767 {
-    padding: 64px 0 120px;
+    padding: 64px 0 70px;
   }
 }
 
@@ -23,7 +23,7 @@
   }
 }
 
-.stocks_list {
+.stocks__list {
   display: grid;
   margin: 0;
   padding: 0;

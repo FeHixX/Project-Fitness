@@ -71,7 +71,7 @@
   @include vp-767 {
     display: grid;
     max-width: 100%;
-    margin: 0 0 33px;
+    margin: 0 0 38px;
     transform: translateX(0);
     gap: 20px 30px;
     grid-template-areas: ". stocks" "services trainers" "subscriptions schedule";
@@ -113,6 +113,7 @@
   font-size: 14px;
   font-family: $ff-roboto-condensed;
   color: $color-default-white;
+  outline: none;
 
   &::before {
     content: "";
@@ -135,8 +136,6 @@
   }
 
   @include focus {
-    outline: none;
-
     &::before {
       top: -8px;
       left: -11px;
