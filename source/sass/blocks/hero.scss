@@ -42,7 +42,6 @@
   margin: 295px 0 0;
   font-size: 14px;
   line-height: 21px;
-  font-family: $ff-roboto-condensed;
   text-align: right;
 
   @include vp-1199 {
@@ -77,6 +76,7 @@
   margin: 0 49px 14px 0;
   font-weight: 600;
   font-size: 48px;
+  font-family: $ff-alumni-sans;
   letter-spacing: 1.44px;
 
   @include vp-1199 {
@@ -96,6 +96,7 @@
   margin: 0 0 50px;
   font-weight: 700;
   font-size: 92px;
+  font-family: $ff-alumni-sans;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 4.6px;
