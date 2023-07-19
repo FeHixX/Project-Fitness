@@ -3,8 +3,9 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 
 import {isButtonSmoothScroll} from './modules/smooth-scroll';
-import {isButtonPlayVideo} from './modules/player';
+import {isButtonPlayVideo} from './modules/description/player';
 import {initSliderTrainers} from './modules/trainers/slider';
+import {isMouseCardHover} from './modules/subscriptions/cards';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     isButtonSmoothScroll();
     isButtonPlayVideo();
     initSliderTrainers();
+    isMouseCardHover();
   });
 });
 

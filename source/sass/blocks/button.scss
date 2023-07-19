@@ -59,6 +59,16 @@
       inset: -1px;
     }
 
+    &.is-active {
+      color: $color-default-white;
+      border-color: $color-transparent;
+      outline: none;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
     @include hover-focus {
       color: $color-default-white;
       border-color: $color-transparent;
