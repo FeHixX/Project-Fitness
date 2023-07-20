@@ -4,6 +4,7 @@ import Swiper from '../../vendor/swiper';
 const initSliderTrainers = () => {
   const swiper = new Swiper('.trainers__content', {
     loop: true,
+    grabCursor: true,
     breakpoints: {
       0: {
         slidesPerView: 1,

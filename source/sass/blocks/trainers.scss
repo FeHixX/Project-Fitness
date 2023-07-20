@@ -40,7 +40,7 @@
 
   &::after {
     left: 100%;
-    right: -5000px;
+    right: -10000px;
   }
 
   @include vp-1199 {
@@ -187,6 +187,7 @@
 
 .trainers__item:hover {
   &::before {
+    box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
     opacity: 1;
     transition: opacity $trans-default;
   }

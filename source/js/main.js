@@ -7,6 +7,7 @@ import {isButtonSmoothScroll} from './modules/smooth-scroll';
 import {isButtonPlayVideo} from './modules/description/player';
 import {initSliderTrainers} from './modules/trainers/slider';
 import {isMouseCardHover} from './modules/subscriptions/cards';
+import {initSliderReviews} from './modules/reviews/slider';
 
 // ---------------------------------
 
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     isButtonPlayVideo();
     initSliderTrainers();
     isMouseCardHover();
+    initSliderReviews();
   });
 });
 

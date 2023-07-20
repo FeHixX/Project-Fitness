@@ -7,7 +7,7 @@
   background-color: $color-ghost-white;
 
   @include vp-1199 {
-    padding: 101px 0;
+    padding: 101px 0 99px;
   }
 
   @include vp-767 {
@@ -126,6 +126,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   list-style-type: none;
   animation: opacitys 0.3s;
 
@@ -187,6 +188,7 @@
   position: relative;
   top: 0;
   right: 0;
+  flex-shrink: 0;
   width: 42px;
   height: 42px;
   margin-left: 30px;
@@ -196,6 +198,7 @@
   outline: none;
   box-shadow: inset 0 0 0 1px $color-sapphire;
   cursor: pointer;
+  transition: background-color $trans-default;
 
   &::before {
     content: "";
@@ -242,7 +245,7 @@
   @include vp-767 {
     width: 32px;
     height: 32px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 

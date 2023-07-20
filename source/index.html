@@ -489,10 +489,10 @@
               <div class="faq__content" data-tabs="parent">
                 <ul class="faq__tabs-list" data-tabs="controls">
                   <li class="faq__tabs-item">
-                    <button class="faq__tabs-button" type="button" data-tabs="control">Центр</button>
+                    <button class="faq__tabs-button is-active" type="button" data-tabs="control">Центр</button>
                   </li>
                   <li class="faq__tabs-item">
-                    <button class="faq__tabs-button is-active" type="button" data-tabs="control">Абонемент</button>
+                    <button class="faq__tabs-button" type="button" data-tabs="control">Абонемент</button>
                   </li>
                   <li class="faq__tabs-item">
                     <button class="faq__tabs-button" type="button" data-tabs="control">Услуги</button>
@@ -502,7 +502,7 @@
                   </li>
                 </ul>
                 <div class="faq__tab-content" data-tabs="content">
-                  <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
+                  <ul class="faq__questions-list is-active" data-accordion="parent" data-tabs="element">
                     <li class="faq__question-item" data-accordion="element">
                       <div class="faq__subtitle-container">
                         <h3 class="faq__subtitle" data-accordion="button">Как стать членом фитнес-центра?</h3>
@@ -548,8 +548,8 @@
                       </div>
                     </li>
                   </ul>
-                  <ul class="faq__questions-list is-active" data-accordion="parent" data-tabs="element">
-                    <li class="faq__question-item is-active" data-accordion="element">
+                  <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
+                    <li class="faq__question-item" data-accordion="element">
                       <div class="faq__subtitle-container">
                         <h3 class="faq__subtitle" data-accordion="button">Занятия с тренером входят в абонемент?</h3>
                         <button class="faq__button" data-accordion="button" data-label="Нажмите чтобы раскрыть ответ."></button>
@@ -687,6 +687,51 @@
                     </li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__container">
+              <h2 class="reviews__title title">Отзывы</h2>
+              <div class="reviews__content swiper">
+                <ul class="reviews__list swiper-wrapper">
+                  <li class="reviews__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/anna@1x.webp 1x, ./img/reviews/anna@2x.webp 2x" width="80" height="80">
+                      <img src="./img/reviews/anna@1x.jpg" srcset="./img/reviews/anna@2x.jpg 2x" width="80" height="80" alt="Аватарка.">
+                    </picture>
+                    <div class="reviews__body">
+                      <h3>Анна Орлова</h3>
+                      <p>
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </li>
+                  <li class="reviews__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/anna@1x.webp 1x, ./img/reviews/anna@2x.webp 2x" width="80" height="80">
+                      <img src="./img/reviews/anna@1x.jpg" srcset="./img/reviews/anna@2x.jpg 2x" width="80" height="80" alt="Аватарка.">
+                    </picture>
+                    <div class="reviews__body">
+                      <h3>Анна Орлова</h3>
+                      <p>
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="reviews__button reviews__button--prev arrow" type="button" aria-label="Кнопка переключения на предыдущий слайд.">
+                  <svg class="arrow__icon" width="18" height="34" aria-hidden="true" focusable="false">
+                    <use href="./img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="reviews__button reviews__button--next arrow" type="button" aria-label="Кнопка переключения на следующий слайд.">
+                  <svg class="arrow__icon" width="18" height="34" aria-hidden="true" focusable="false">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
