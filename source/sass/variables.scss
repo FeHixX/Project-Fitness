@@ -22,6 +22,9 @@ $color-ghost-white:                 #f8f9fc;
 $color-venetian-red:                #b90128;
 $color-spindle:                     #b6bdcc;
 $color-link-water:                  #c8c9cc;
+$color-light-slate-grey:            #74819c;
+$color-torch-red-light:             #ff121f;
+$color-grey:                        #787878;
 
 // Gradient
 
@@ -48,7 +51,9 @@ $ff-roboto-condensed:               "Roboto Condensed", "Arial", sans-serif;
 // ---------------------------------
 
 $tf-default:                        ease;
+$tf-ease-in:                        ease-in;
 $trans-default:                     0.3s $tf-default;
+$trans-ease-in:                     0.3s $tf-ease-in;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);

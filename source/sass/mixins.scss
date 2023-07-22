@@ -44,11 +44,10 @@
   }
 }
 
-@mixin hover-active {
-  @include hover {
+@mixin focus-within-active {
+  @include focus-within {
     @content;
   }
-
   @include active {
     @content;
   }
@@ -68,7 +67,7 @@
   }
 }
 
-@keyframes opacitys {
+@keyframes opacity {
   from {
     opacity: 0;
   }

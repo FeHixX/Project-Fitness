@@ -1,0 +1,87 @@
+.lesson {
+  position: relative;
+  color: $color-default-white;
+  background-color: $color-sapphire;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: -50vw;
+    height: 100%;
+    background-color: $color-sapphire;
+  }
+
+  @include vp-1199 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -50vw;
+      left: 100%;
+      height: 100%;
+      background-color: $color-sapphire;
+    }
+  }
+}
+
+.lesson__container {
+  padding: 56px 170px 34px 0;
+
+  @include vp-1199 {
+    padding: 61px 118px 69px 88px;
+  }
+
+  @include vp-767 {
+    padding: 63px 0 69px;
+  }
+}
+
+.lesson__title {
+  margin: 0 0 15px;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 84px;
+  font-family: $ff-alumni-sans;
+  letter-spacing: 1.62px;
+
+  @include vp-1199 {
+    margin: 0 0 30px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: normal;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 32px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.lesson__inputs-container {
+  display: grid;
+  margin: 0 0 28px;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1199 {
+    gap: 30px 60px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 36px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.lesson__button {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}

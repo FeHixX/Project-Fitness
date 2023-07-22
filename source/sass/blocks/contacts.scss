@@ -1,0 +1,142 @@
+.contacts {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -50vw;
+    left: 0;
+    z-index: -1;
+    height: 1px;
+    background-color: $color-light-slate-grey;
+  }
+
+  @include vp-1199 {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.contacts__container {
+  padding: 58px 0 64px 121px;
+
+  @include vp-1199 {
+    padding: 63px 88px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 62px;
+  }
+}
+
+.contacts__title {
+  margin: 0 0 36px;
+
+  @include vp-1199 {
+    margin: 0 0 31px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 34px;
+  }
+}
+
+.contacts__list {
+  position: relative;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  list-style-type: none;
+  font-style: normal;
+  gap: 18px 5px;
+  grid-template-columns: repeat(2, 1fr);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: calc(51% - 1px);
+    width: 1px;
+    height: calc(100% - 12px);
+    margin: 0 auto;
+    background-color: $color-light-slate-grey;
+  }
+
+  @include vp-1199 {
+    padding-left: 0;
+    gap: 18px 30px;
+
+    &::before {
+      left: 53%;
+    }
+  }
+
+  @include vp-767 {
+    gap: 19px 0;
+    grid-template-columns: 1fr;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.contacts__item {
+  &:nth-child(2n) {
+    margin-left: 60px;
+  }
+
+  &:nth-child(2n - 1) {
+    margin-right: 55px;
+  }
+
+  @include vp-1199 {
+    &:nth-child(2n) {
+      margin-left: 20%;
+    }
+
+    &:nth-child(2n - 1) {
+      margin-right: 15px;
+    }
+  }
+
+  @include vp-767 {
+    &--phone {
+      grid-area: 3/1/4/-1;
+    }
+
+    &--schedule {
+      grid-area: 2/1/3/-1;
+    }
+
+    &:nth-child(2n),
+    &:nth-child(2n - 1) {
+      margin: 0;
+    }
+  }
+}
+
+.contacts__subtitle {
+  margin: 0 0 3px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @include vp-1199 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
