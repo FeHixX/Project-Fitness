@@ -12,16 +12,16 @@
     background: url("../../img/subscriptions/weight-pancakes-desktop@1x.png") center / cover no-repeat;
     transform: rotate(150deg);
 
+    @supports (background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp")) {
+      background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp");
+    }
+
     @include retina {
       background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.png");
 
       @supports (background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.webp")) {
         background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.webp");
       }
-    }
-
-    @supports (background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp")) {
-      background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp");
     }
   }
 
@@ -57,49 +57,56 @@
 }
 
 .subscriptions__title {
-  margin: 0 0 16px;
+  margin: 0 0 3px;
 
   @include vp-1199 {
-    margin: 0 0 19px;
+    margin: 0 0 6px;
   }
 
   @include vp-767 {
-    margin: 0 0 20px;
+    margin: 0 0 6px;
+  }
+}
+
+.subscriptions__tab-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -23px;
+    width: calc(100% + 45px);
+    height: 2px;
+    background-color: $color-grey;
+    opacity: 0.2;
   }
 }
 
 .subscriptions__tabs {
   position: relative;
   display: flex;
-  margin: 0 0 51px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 38px;
   padding: 0;
   list-style-type: none;
   gap: 0 46px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -13px;
-    width: 100%;
-    height: 2px;
-    background-color: $color-sapphire;
-    opacity: 0.2;
-  }
-
   @include vp-1199 {
-    margin: 0 0 57px;
+    margin: 0 0 44px;
     gap: 0 55px;
   }
 
   @include vp-767 {
-    margin: 0 0 48px;
+    margin: 0 0 34px;
     gap: 0 45px;
   }
 }
 
 .subscriptions__tab {
   position: relative;
-  padding: 0;
+  padding: 13px 0;
   font-size: 20px;
   line-height: 30px;
   color: $color-sapphire;
@@ -112,7 +119,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -13px;
+    bottom: 0;
     width: 100%;
     height: 2px;
   }
@@ -123,6 +130,7 @@
   }
 
   @include vp-767 {
+    padding: 14px 0;
     font-size: 16px;
     line-height: 24px;
   }

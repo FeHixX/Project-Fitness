@@ -48,6 +48,7 @@
   @include focus-within {
     @content;
   }
+
   @include active {
     @content;
   }

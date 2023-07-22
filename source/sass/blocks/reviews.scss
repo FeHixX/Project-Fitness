@@ -1,5 +1,5 @@
 .reviews__container {
-  padding: 121px 0;
+  padding: 121px 0 120px;
 
   @include vp-1199 {
     padding: 92px 0 100px;
@@ -15,7 +15,7 @@
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 39px;
+    margin: 0 0 40px;
   }
 
   @include vp-767 {
@@ -36,13 +36,13 @@
     position: absolute;
     inset: 0;
     right: 100%;
-    left: -10000px;
+    left: -50vw;
     z-index: 2;
     background-color: $color-default-white;
   }
 
   &::after {
-    right: -10000px;
+    right: -50vw;
     left: 100%;
   }
 
@@ -119,7 +119,6 @@
 
 .reviews__body p {
   margin-top: 0;
-  font-size: 16px;
   line-height: 22px;
 
   @include vp-767 {

@@ -2,7 +2,7 @@
   padding: 136px 0 120px;
 
   @include vp-1199 {
-    padding: 92px 0 101px;
+    padding: 93px 0 100px;
   }
 
   @include vp-767 {
@@ -15,7 +15,7 @@
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 39px;
+    margin: 0 0 40px;
   }
 
   @include vp-767 {
@@ -55,13 +55,24 @@
 }
 
 .stocks__main-item picture {
-  display: flex;
-  flex-grow: 1;
+  @include vp-1199 {
+    width: calc(58% + 6px);
+  }
+
+  @include vp-767 {
+    align-self: stretch;
+    width: 100%;
+  }
 }
 
 .stocks__main-item img {
-  width: 100%;
+  height: 100%;
   object-fit: cover;
+
+  @include vp-1199 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .stocks__main-content {
@@ -72,6 +83,10 @@
   padding: 33px 45px 45px;
   color: $color-default-white;
   background-color: $color-torch-red;
+
+  @include vp-1199 {
+    width: calc(42% - 6px);
+  }
 
   @include vp-767 {
     align-items: center;
@@ -200,14 +215,11 @@
   margin: 0 0 8px;
   font-weight: 700;
   font-size: 26px;
-
-  @include vp-767 {
-    margin: 0 0 10px;
-  }
 }
 
 .stocks__item-body p {
   margin-top: 0;
+  line-height: 22px;
 }
 
 .stocks__item-body > :last-child {
@@ -229,6 +241,10 @@
   &::before {
     content: "";
     position: absolute;
+  }
+
+  @include vp-767 {
+    text-align: center;
   }
 
   @include hover {

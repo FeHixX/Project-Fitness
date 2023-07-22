@@ -40,7 +40,7 @@
                 <p class="hero__text">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
                 <div class="hero__right-content">
                   <p class="hero__city">омск</p>
-                  <h1 class="hero__title">Фитнес<br>центр</h1>
+                  <h1 class="hero__title">Фитнес центр</h1>
                   <a class="hero__button button button--main" href="#subscriptions">Купить абонемент</a>
                 </div>
               </div>
@@ -74,20 +74,22 @@
                   <img src="./img/description/gym-desktop@1x.jpg" srcset="./img/description/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Большой зал с тренажерами.">
                 </picture>
               </div>
-              <div class="description__player player">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/description/poster-mobile@1x.webp, ./img/description/poster-mobile@2x.webp 2x" width="320" height="167">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/description/poster-tablet@1x.webp, ./img/description/poster-tablet@2x.webp 2x" width="266" height="167">
-                  <source type="image/webp" srcset="./img/description/poster-desktop@1x.webp, ./img/description/poster-desktop@2x.webp 2x" width="364" height="228">
-                  <source media="(max-width: 767px)" srcset="./img/description/poster-mobile@1x.jpg, ./img/description/poster-mobile@2x.jpg 2x" width="320" height="167">
-                  <source media="(max-width: 1199px)" srcset="./img/description/poster-tablet@1x.jpg, ./img/description/poster-tablet@2x.jpg 2x" width="266" height="167">
-                  <img src="./img/description/poster-desktop@1x.jpg" srcset="./img/description/poster-desktop@2x.jpg 2x" width="364" height="228" alt="Постер: комната с велотренажерами и черным ковриком.">
-                </picture>
-                <button class="player__button" type="button" aria-label="Кнопка воспроизведения видео." data-src="https://www.youtube.com/embed/9TZXsZItgdw">
-                  <svg class="player__icon" width="13" height="15" aria-hidden="true" focusable="false">
-                    <use href="./img/sprite.svg#play"></use>
-                  </svg>
-                </button>
+              <div class="description__player">
+                <div class="player">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/description/poster-mobile@1x.webp, ./img/description/poster-mobile@2x.webp 2x" width="320" height="167">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/description/poster-tablet@1x.webp, ./img/description/poster-tablet@2x.webp 2x" width="266" height="167">
+                    <source type="image/webp" srcset="./img/description/poster-desktop@1x.webp, ./img/description/poster-desktop@2x.webp 2x" width="364" height="228">
+                    <source media="(max-width: 767px)" srcset="./img/description/poster-mobile@1x.jpg, ./img/description/poster-mobile@2x.jpg 2x" width="320" height="167">
+                    <source media="(max-width: 1199px)" srcset="./img/description/poster-tablet@1x.jpg, ./img/description/poster-tablet@2x.jpg 2x" width="266" height="167">
+                    <img src="./img/description/poster-desktop@1x.jpg" srcset="./img/description/poster-desktop@2x.jpg 2x" width="364" height="228" alt="Постер: комната с велотренажерами и черным ковриком.">
+                  </picture>
+                  <button class="player__button" type="button" aria-label="Кнопка воспроизведения видео." data-src="https://www.youtube.com/embed/9TZXsZItgdw">
+                    <svg class="player__icon" width="13" height="15" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -208,36 +210,38 @@
             </div>
           </div>
         </section>
-        <section class="super-games">
+        <section class="competitions">
           <div class="container">
-            <div class="super-games__container">
-              <div class="super-games__left-container">
-                <div class="super-games__inner-container">
-                  <h2 class="super-games__title">Super games</h2>
-                  <div class="super-games__info-container">
-                    <div class="super-games__date">
-                      <p class="super-games__subtitle">Дата</p>
-                      <div class="super-games__date-info">
-                        <span class="super-games__value">7</span>
-                        <span class="super-games__date-text">Марта<br>2019</span>
+            <div class="competitions__container">
+              <div class="competitions__left-container">
+                <div class="competitions__inner-container">
+                  <h2 class="competitions__title">Super games</h2>
+                  <div class="competitions__info-container">
+                    <div class="competitions__date">
+                      <p class="competitions__subtitle">Дата</p>
+                      <div class="competitions__date-info">
+                        <span class="competitions__value">7</span>
+                        <span class="competitions__date-text">Марта<br>2019</span>
                       </div>
                     </div>
-                    <div class="super-games__time">
-                      <p class="super-games__subtitle">Время</p>
-                      <span class="super-games__time-text">12:00</span>
+                    <div class="competitions__time">
+                      <p class="competitions__subtitle">Время</p>
+                      <span class="competitions__time-text">12:00</span>
                     </div>
                   </div>
                 </div>
-                <p class="super-games__text">Ежегодные соревнования по CrossFit</p>
-                <a class="super-games__button button button--main" href="#!">заполнить заявку</a>
+                <div class="competitions__body">
+                  <p>Ежегодные соревнования по CrossFit</p>
+                </div>
+                <a class="competitions__button button button--main" href="#!">заполнить заявку</a>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/super-games/man-mobile@1x.webp, ./img/super-games/man-mobile@2x.webp 2x" width="290" height="292">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/super-games/man-tablet@1x.webp, ./img/super-games/man-tablet@2x.webp 2x" width="386" height="292">
-                <source type="image/webp" srcset="./img/super-games/man-desktop@1x.webp, ./img/super-games/man-desktop@2x.webp 2x" width="660" height="500">
-                <source media="(max-width: 767px)" srcset="./img/super-games/man-mobile@1x.jpg, ./img/super-games/man-mobile@2x.jpg 2x" width="290" height="292">
-                <source media="(max-width: 1199px)" srcset="./img/super-games/man-tablet@1x.jpg, ./img/super-games/man-tablet@2x.jpg 2x" width="386" height="345">
-                <img src="./img/super-games/man-desktop@1x.jpg" srcset="./img/super-games/man-desktop@2x.jpg 2x" width="660" height="500" alt="Мужчина отжимается на синем фоне.">
+                <source type="image/webp" media="(max-width: 767px)" srcset="./img/competitions/man-mobile@1x.webp, ./img/competitions/man-mobile@2x.webp 2x" width="290" height="292">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/competitions/man-tablet@1x.webp, ./img/competitions/man-tablet@2x.webp 2x" width="386" height="292">
+                <source type="image/webp" srcset="./img/competitions/man-desktop@1x.webp, ./img/competitions/man-desktop@2x.webp 2x" width="660" height="500">
+                <source media="(max-width: 767px)" srcset="./img/competitions/man-mobile@1x.jpg, ./img/competitions/man-mobile@2x.jpg 2x" width="290" height="292">
+                <source media="(max-width: 1199px)" srcset="./img/competitions/man-tablet@1x.jpg, ./img/competitions/man-tablet@2x.jpg 2x" width="386" height="345">
+                <img src="./img/competitions/man-desktop@1x.jpg" srcset="./img/competitions/man-desktop@2x.jpg 2x" width="660" height="500" alt="Мужчина отжимается на синем фоне.">
               </picture>
             </div>
           </div>
@@ -379,9 +383,7 @@
                   </p>
                   <div class="advantages__text-content">
                     <h3 class="advantages__subtitle">Площадь</h3>
-                    <p class="advantages__text">
-                      Занимайтесь без очередей и&nbsp;толпучки
-                    </p>
+                    <p class="advantages__text">Занимайтесь без очередей и&nbsp;толпучки</p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--parking">
@@ -391,18 +393,14 @@
                   </p>
                   <div class="advantages__text-content">
                     <h3 class="advantages__subtitle">Собственная парковка</h3>
-                    <p class="advantages__text">
-                      Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке
-                    </p>
+                    <p class="advantages__text">Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--main">
                   <h3 class="advantages__subtitle advantages__subtitle--main">
                     <span class="advantages__measurement advantages__measurement--main">100</span> Тренажеров
                   </h3>
-                  <p class="advantages__text advantages__text--main">
-                    Современные тренажеры на&nbsp;все группы мышц
-                  </p>
+                  <p class="advantages__text advantages__text--main">Современные тренажеры на&nbsp;все группы мышц</p>
                 </li>
                 <li class="advantages__item advantages__item--comfort">
                   <p class="advantages__value">
@@ -411,9 +409,7 @@
                   </p>
                   <div class="advantages__text-content">
                     <h3 class="advantages__subtitle">Комфорт</h3>
-                    <p class="advantages__text">
-                      Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
-                    </p>
+                    <p class="advantages__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--experience">
@@ -423,9 +419,7 @@
                   </p>
                   <div class="advantages__text-content">
                     <h3 class="advantages__subtitle">Тренерский опыт</h3>
-                    <p class="advantages__text">
-                      Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
-                    </p>
+                    <p class="advantages__text">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                   </div>
                 </li>
               </ul>
@@ -438,7 +432,7 @@
               <h2 class="stocks__title title">Акции</h2>
               <ul class="stocks__list">
                 <li class="stocks__main-item">
-                  <h3 class="visually-hidden">Безлимит</h3>
+                  <h3 class="visually-hidden">Безлимит.</h3>
                   <div class="stocks__main-content">
                     <p class="stocks__text-main">
                       Год
@@ -772,7 +766,7 @@
                   </li>
                   <li class="contacts__item contacts__item--phone">
                     <p class="contacts__subtitle">Телефон:</p>
-                    <a href="tel:88005555555" lass="contacts__text">8-800-555-55-55</a>
+                    <a class="contacts__text" href="tel:88005555555">8-800-555-55-55</a>
                   </li>
                   <li class="contacts__item contacts__item--schedule">
                     <p class="contacts__subtitle">График работы:</p>

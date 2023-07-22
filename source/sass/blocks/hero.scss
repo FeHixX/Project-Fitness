@@ -77,6 +77,7 @@
   font-weight: 600;
   font-size: 48px;
   font-family: $ff-alumni-sans;
+  text-align: end;
   letter-spacing: 1.44px;
 
   @include vp-1199 {
@@ -102,9 +103,11 @@
   letter-spacing: 4.6px;
 
   @include vp-1199 {
+    width: 200px;
     margin: 0 0 38px;
     font-size: 72px;
     line-height: 86px;
+    text-align: end;
     text-transform: inherit;
     letter-spacing: 3.6px;
   }
@@ -121,13 +124,11 @@
 }
 
 .hero__container img {
-  width: 500px;
   height: 556px;
   transform: translateY(-10px);
   object-fit: cover;
 
   @include vp-1199 {
-    width: 324px;
     height: 390px;
     transform: translateY(0);
   }
