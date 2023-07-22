@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initTabs} from './modules/tabs/init-tabs';
-import {initAccordions} from './modules/accordion/init-accordion';
+import {initTabs} from './vendor/tabs/init-tabs';
+import {initAccordions} from './vendor/accordion/init-accordion';
 
 import {isButtonSmoothScroll} from './modules/smooth-scroll';
 import {isButtonPlayVideo} from './modules/description/player';
