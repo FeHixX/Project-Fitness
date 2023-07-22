@@ -9,18 +9,18 @@
     bottom: -95px;
     width: 321px;
     height: 384px;
-    background: url("../../img/subscriptions/weight-pancakes-desktop@1x.png") center / cover no-repeat;
+    background: url("../img/subscriptions/weight-pancakes-desktop@1x.png") center / cover no-repeat;
     transform: rotate(150deg);
 
-    @supports (background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp")) {
-      background-image: url("../../img/subscriptions/weight-pancakes-desktop@1x.webp");
+    @supports (background-image: url("../img/subscriptions/weight-pancakes-desktop@1x.webp")) {
+      background-image: url("../img/subscriptions/weight-pancakes-desktop@1x.webp");
     }
 
     @include retina {
-      background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.png");
+      background-image: url("../img/subscriptions/weight-pancakes-desktop@2x.png");
 
-      @supports (background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.webp")) {
-        background-image: url("../../img/subscriptions/weight-pancakes-desktop@2x.webp");
+      @supports (background-image: url("../img/subscriptions/weight-pancakes-desktop@2x.webp")) {
+        background-image: url("../img/subscriptions/weight-pancakes-desktop@2x.webp");
       }
     }
   }
