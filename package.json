@@ -2,7 +2,7 @@
   "name": "Project-Fitness",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Акселератор: Фитнес 2.0",
   "browserslist": [
     "last 3 versions",
     "IE 11",
