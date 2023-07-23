@@ -3209,14 +3209,6 @@ button,
   margin: 0;
 }
 
-.faq__question-item.is-active .faq__button {
-  background-color: #102654;
-}
-
-.faq__question-item.is-active .faq__button::before {
-  background-color: #ffffff;
-}
-
 .faq__question-item.is-active .faq__button::after {
   display: none;
 }
