@@ -38,6 +38,7 @@ body {
 a {
   color: $color-sapphire;
   text-decoration: none;
+  user-select: none;
 }
 
 img,
@@ -127,4 +128,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }
