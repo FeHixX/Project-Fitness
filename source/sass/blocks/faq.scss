@@ -294,12 +294,6 @@
 }
 
 .faq__question-item.is-active .faq__button {
-  background-color: $color-sapphire;
-
-  &::before {
-    background-color: $color-default-white;
-  }
-
   &::after {
     display: none;
   }
