@@ -3169,6 +3169,9 @@ button,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .faq__button:hover:not([disabled]) {
@@ -3190,7 +3193,9 @@ button,
 }
 
 .faq__button:active:not([disabled])::after {
-  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .faq__button[disabled] {
@@ -3218,7 +3223,9 @@ button,
 }
 
 .faq__question-item.is-active .faq__button::after {
-  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .faq__question-item.is-active .faq__body {
