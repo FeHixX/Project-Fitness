@@ -3468,7 +3468,7 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: text;
 }
 
 .custom-input__container input::-webkit-input-placeholder {
