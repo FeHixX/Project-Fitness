@@ -2708,6 +2708,7 @@ button,
 }
 
 .advantages__measurement--main {
+  margin: 0 0 -5px;
   display: block;
   font-weight: 700;
   font-size: 74px;
@@ -4158,10 +4159,6 @@ button,
     font-size: 22px;
   }
 
-  .advantages__measurement {
-    margin: 0 0 -5px;
-  }
-
   .stocks__container {
     padding: 93px 0 100px;
   }
@@ -4621,7 +4618,7 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     width: 150px;
-    margin: 0 0 9px;
+    margin: 0 0 4px;
   }
 
   .advantages__body {
