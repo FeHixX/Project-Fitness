@@ -1,12 +1,15 @@
 .stocks__container {
-  padding: 136px 0 120px;
+  padding-top: 136px;
+  padding-bottom: 120px;
 
   @include vp-1199 {
-    padding: 93px 0 100px;
+    padding-top: 93px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding: 64px 0 70px;
+    padding-top: 64px;
+    padding-bottom: 70px;
   }
 }
 

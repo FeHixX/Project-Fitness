@@ -6,15 +6,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 109px 0 121px;
+  padding-top: 109px;
+  padding-bottom: 121px;
 
   @include vp-1199 {
-    padding: 92px 0;
+    padding-top: 92px;
+    padding-bottom: 92px;
   }
 
   @include vp-767 {
     align-items: stretch;
-    padding: 64px 0 63px;
+    padding-top: 64px;
+    padding-bottom: 63px;
   }
 }
 

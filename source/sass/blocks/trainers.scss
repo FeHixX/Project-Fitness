@@ -1,13 +1,13 @@
 .trainers__container {
   position: relative;
-  padding: 0 0 105px;
+  padding-bottom: 105px;
 
   @include vp-1199 {
-    padding: 0 0 100px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding: 0 0 70px;
+    padding-bottom: 70px;
   }
 }
 

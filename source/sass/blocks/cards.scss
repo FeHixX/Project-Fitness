@@ -104,41 +104,47 @@
 }
 
 .cards__price {
+  position: relative;
   z-index: 1;
-  margin: 0 0 35px;
+  margin: 0 -4px 35px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
   color: $color-egyptian-blue;
   word-spacing: -5px;
 
+  &::before {
+    content: attr(data-shadow);
+    position: absolute;
+    bottom: -6px;
+    left: calc(-9% - 1px);
+    z-index: -1;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: $color-whisper;
+    opacity: 0.4;
+  }
+
   @include vp-767 {
-    margin: 0 0 31px;
+    margin: 0 -2px 31px 0;
     font-size: 48px;
     line-height: 72px;
     word-spacing: -5px;
+
+    &::before {
+      bottom: -4px;
+      left: -9%;
+      font-size: 80px;
+      line-height: 120px;
+    }
   }
 }
 
 .cards__ruble {
+  margin-left: -1px;
   font-family: $ff-rouble;
   color: $color-sapphire;
-}
-
-.cards__price-shadow {
-  position: absolute;
-  bottom: 157px;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 150px;
-  color: $color-whisper;
-  opacity: 0.4;
-
-  @include vp-767 {
-    bottom: 139px;
-    font-size: 80px;
-    line-height: 120px;
-  }
 }
 
 .cards__button {

@@ -1,10 +1,10 @@
-.custom-input.is-invalid .custom-input__container {
+.custom-input.is-invalid .custom-input {
   &::before {
     background-color: $color-torch-red;
   }
 }
 
-.custom-input__container:has(input[disabled]) {
+.custom-input:has(input[disabled]) {
   pointer-events: none;
 
   &::before {
@@ -12,7 +12,7 @@
   }
 }
 
-.custom-input__container {
+.custom-input label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,12 +54,12 @@
   }
 }
 
-.custom-input__container label {
+.custom-input__label {
   position: fixed;
   transform: scale(0);
 }
 
-.custom-input__container input {
+.custom-input input {
   padding: 5px 0;
   font-size: 14px;
   line-height: 22px;
