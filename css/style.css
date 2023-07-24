@@ -1872,7 +1872,6 @@ button,
   min-height: 756px;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 60px;
 }
 
 .description__content {
@@ -1884,6 +1883,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   width: 355px;
+  margin-left: 60px;
   padding: 39px 0 0;
 }
 
@@ -3891,7 +3891,6 @@ button,
     align-items: center;
     padding-top: 101px;
     padding-bottom: 183px;
-    padding-left: 45px;
   }
 
   .description__content {
@@ -4448,7 +4447,6 @@ button,
   .description__container {
     padding-top: 64px;
     padding-bottom: 70px;
-    padding-left: 15px;
   }
 
   .description__content {
