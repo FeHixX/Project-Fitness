@@ -1727,7 +1727,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 30px 0 0;
+  padding-top: 30px;
 }
 
 .header__logo-link {
@@ -1870,7 +1870,9 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 756px;
-  padding: 120px 0 120px 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 60px;
 }
 
 .description__content {
@@ -2066,7 +2068,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 121px 0 120px;
+  padding-top: 121px;
+  padding-bottom: 120px;
 }
 
 .subscriptions__title {
@@ -2248,8 +2251,9 @@ button,
 }
 
 .cards__price {
+  position: relative;
   z-index: 1;
-  margin: 0 0 35px;
+  margin: 0 -4px 35px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -2257,19 +2261,23 @@ button,
   word-spacing: -5px;
 }
 
-.cards__ruble {
-  font-family: "Rouble", "Arial", sans-serif;
-  color: #102654;
-}
-
-.cards__price-shadow {
+.cards__price::before {
+  content: attr(data-shadow);
   position: absolute;
-  bottom: 157px;
+  bottom: -6px;
+  left: calc(-9% - 1px);
+  z-index: -1;
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
   color: #e8e8e8;
   opacity: 0.4;
+}
+
+.cards__ruble {
+  margin-left: -1px;
+  font-family: "Rouble", "Arial", sans-serif;
+  color: #102654;
 }
 
 .cards__button {
@@ -2280,7 +2288,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 120px 0 107px;
+  padding-top: 120px;
+  padding-bottom: 107px;
 }
 
 .competitions__container img {
@@ -2398,7 +2407,7 @@ button,
 
 .trainers__container {
   position: relative;
-  padding: 0 0 105px;
+  padding-bottom: 105px;
 }
 
 .trainers__title {
@@ -2565,7 +2574,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 109px 0 121px;
+  padding-top: 109px;
+  padding-bottom: 121px;
 }
 
 .advantages__title {
@@ -2716,7 +2726,8 @@ button,
 }
 
 .stocks__container {
-  padding: 136px 0 120px;
+  padding-top: 136px;
+  padding-bottom: 120px;
 }
 
 .stocks__title {
@@ -2945,7 +2956,8 @@ button,
 }
 
 .faq__container {
-  padding: 121px 0;
+  padding-top: 121px;
+  padding-bottom: 121px;
   background-color: #f8f9fc;
 }
 
@@ -3233,7 +3245,8 @@ button,
 }
 
 .reviews__container {
-  padding: 121px 0 120px;
+  padding-top: 121px;
+  padding-bottom: 120px;
 }
 
 .reviews__title {
@@ -3382,19 +3395,19 @@ button,
   letter-spacing: 0.7px;
 }
 
-.custom-input.is-invalid .custom-input__container::before {
+.custom-input.is-invalid .custom-input::before {
   background-color: #ed0233;
 }
 
-.custom-input__container:has(input[disabled]) {
+.custom-input:has(input[disabled]) {
   pointer-events: none;
 }
 
-.custom-input__container:has(input[disabled])::before {
+.custom-input:has(input[disabled])::before {
   opacity: 0.3;
 }
 
-.custom-input__container {
+.custom-input label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3405,7 +3418,7 @@ button,
   flex-direction: column;
 }
 
-.custom-input__container::before {
+.custom-input label::before {
   content: "";
   position: absolute;
   bottom: 1px;
@@ -3417,11 +3430,11 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.custom-input__container:hover:not([disabled])::before {
+.custom-input label:hover:not([disabled])::before {
   opacity: 1;
 }
 
-.custom-input__container:focus-within:not([disabled])::before {
+.custom-input label:focus-within:not([disabled])::before {
   top: -1px;
   left: -5px;
   z-index: 1;
@@ -3434,7 +3447,7 @@ button,
   animation: opacity 0.3s ease;
 }
 
-.custom-input__container:active:not([disabled])::before {
+.custom-input label:active:not([disabled])::before {
   top: -1px;
   left: -5px;
   z-index: 1;
@@ -3447,19 +3460,19 @@ button,
   animation: opacity 0.3s ease;
 }
 
-.custom-input__container[disabled] {
+.custom-input label[disabled] {
   opacity: 0.3;
   pointer-events: none;
 }
 
-.custom-input__container label {
+.custom-input__label {
   position: fixed;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
 }
 
-.custom-input__container input {
+.custom-input input {
   padding: 5px 0;
   font-size: 14px;
   line-height: 22px;
@@ -3470,27 +3483,27 @@ button,
   cursor: text;
 }
 
-.custom-input__container input::-webkit-input-placeholder {
+.custom-input input::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
 
-.custom-input__container input::-moz-placeholder {
+.custom-input input::-moz-placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
 
-.custom-input__container input:-ms-input-placeholder {
+.custom-input input:-ms-input-placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
 
-.custom-input__container input::-ms-input-placeholder {
+.custom-input input::-ms-input-placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
 
-.custom-input__container input::placeholder {
+.custom-input input::placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
@@ -3585,7 +3598,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 41px 0 42px;
+  padding-top: 41px;
+  padding-bottom: 42px;
 }
 
 .footer__logo-link {
@@ -3796,7 +3810,7 @@ button,
   }
 
   .header__container {
-    padding: 34px 0 0;
+    padding-top: 34px;
   }
 
   .header__logo-link img {
@@ -3826,7 +3840,7 @@ button,
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    padding: 19px 0 0;
+    padding-top: 19px;
     gap: 0 30px;
   }
 
@@ -3875,7 +3889,9 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 101px 0 183px;
+    padding-top: 101px;
+    padding-bottom: 183px;
+    padding-left: 45px;
   }
 
   .description__content {
@@ -3965,7 +3981,8 @@ button,
   }
 
   .subscriptions__container {
-    padding: 101px 0 99px;
+    padding-top: 101px;
+    padding-bottom: 99px;
   }
 
   .subscriptions__title {
@@ -3993,7 +4010,8 @@ button,
   }
 
   .competitions__container {
-    padding: 100px 0 101px;
+    padding-top: 100px;
+    padding-bottom: 101px;
   }
 
   .competitions__container picture {
@@ -4075,7 +4093,7 @@ button,
   }
 
   .trainers__container {
-    padding: 0 0 100px;
+    padding-bottom: 100px;
   }
 
   .trainers__title {
@@ -4104,7 +4122,8 @@ button,
   }
 
   .advantages__container {
-    padding: 92px 0;
+    padding-top: 92px;
+    padding-bottom: 92px;
   }
 
   .advantages__title {
@@ -4163,7 +4182,8 @@ button,
   }
 
   .stocks__container {
-    padding: 93px 0 100px;
+    padding-top: 93px;
+    padding-bottom: 100px;
   }
 
   .stocks__title {
@@ -4196,7 +4216,8 @@ button,
   }
 
   .faq__container {
-    padding: 101px 0 99px;
+    padding-top: 101px;
+    padding-bottom: 99px;
   }
 
   .faq__title {
@@ -4228,7 +4249,8 @@ button,
   }
 
   .reviews__container {
-    padding: 92px 0 100px;
+    padding-top: 92px;
+    padding-bottom: 100px;
   }
 
   .reviews__title {
@@ -4314,7 +4336,8 @@ button,
   }
 
   .footer__container {
-    padding: 45px 0 44px;
+    padding-top: 45px;
+    padding-bottom: 44px;
   }
 
   .footer__logo-link img {
@@ -4368,7 +4391,7 @@ button,
   }
 
   .header__container {
-    padding: 16px 0 0;
+    padding-top: 16px;
   }
 
   .header__logo-link img {
@@ -4391,6 +4414,7 @@ button,
   }
 
   .hero__container {
+    padding-top: 19px;
     display: block;
   }
 
@@ -4422,7 +4446,9 @@ button,
   }
 
   .description__container {
-    padding: 64px 0 70px;
+    padding-top: 64px;
+    padding-bottom: 70px;
+    padding-left: 15px;
   }
 
   .description__content {
@@ -4467,7 +4493,8 @@ button,
   }
 
   .subscriptions__container {
-    padding: 64px 0 69px;
+    padding-top: 64px;
+    padding-bottom: 69px;
   }
 
   .subscriptions__title {
@@ -4505,14 +4532,15 @@ button,
   }
 
   .cards__price {
-    margin: 0 0 31px;
+    margin: 0 -2px 31px 0;
     font-size: 48px;
     line-height: 72px;
     word-spacing: -5px;
   }
 
-  .cards__price-shadow {
-    bottom: 139px;
+  .cards__price::before {
+    bottom: -4px;
+    left: -9%;
     font-size: 80px;
     line-height: 120px;
   }
@@ -4525,7 +4553,8 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 70px 0 64px;
+    padding-top: 70px;
+    padding-bottom: 64px;
   }
 
   .competitions__container picture {
@@ -4541,7 +4570,7 @@ button,
   }
 
   .trainers__container {
-    padding: 0 0 70px;
+    padding-bottom: 70px;
   }
 
   .trainers__title {
@@ -4578,7 +4607,8 @@ button,
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    padding: 64px 0 63px;
+    padding-top: 64px;
+    padding-bottom: 63px;
   }
 
   .advantages__title {
@@ -4646,7 +4676,8 @@ button,
   }
 
   .stocks__container {
-    padding: 64px 0 70px;
+    padding-top: 64px;
+    padding-bottom: 70px;
   }
 
   .stocks__title {
@@ -4706,7 +4737,8 @@ button,
   }
 
   .faq__container {
-    padding: 71px 0;
+    padding-top: 71px;
+    padding-bottom: 71px;
   }
 
   .faq__title {
@@ -4755,7 +4787,8 @@ button,
   }
 
   .reviews__container {
-    padding: 64px 0 70px;
+    padding-top: 64px;
+    padding-bottom: 70px;
   }
 
   .reviews__title {
@@ -4868,7 +4901,8 @@ button,
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    padding: 48px 0 52px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .footer__logo-link {
