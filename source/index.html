@@ -26,7 +26,7 @@
       <header class="header">
         <div class="header__container container">
           <a class="header__logo-link" href="#!">
-            <img src="./img/logo/logo.svg" width="119" height="23" alt="Логотип сайта SUPERGYM.">
+            <img src="./img/logo/logo.svg" width="118" height="23" alt="Логотип сайта SUPERGYM.">
           </a>
           <a class="header__tel" href="tel:+88005555555">8-800-555-55-55</a>
         </div>
@@ -35,12 +35,14 @@
         <section class="main__hero hero">
           <div class="hero__container container">
             <div class="hero__content">
-              <p class="hero__text">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
-              <div class="hero__right-content">
-                <p class="hero__city">омск</p>
-                <h1 class="hero__title">Фитнес центр</h1>
-                <a class="hero__button button button--main" href="#subscriptions">Купить абонемент</a>
+              <div class="hero__body-text">
+                <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
               </div>
+              <div class="hero__body-title">
+                <p>омск</p>
+                <h1>Фитнес центр</h1>
+              </div>
+              <a class="hero__button button button--main" href="#subscriptions">Купить абонемент</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/man-tablet@1x.webp 1x , ./img/hero/man-tablet@2x.webp 2x" width="324" height="390">
@@ -54,8 +56,8 @@
           <div class="description__container container">
             <div class="description__content">
               <h2 class="description__title">Тренажерный зал</h2>
-              <p class="description__parameters">Просторный зал площадью 900&nbsp;кв/м</p>
-              <div class="description__text">
+              <span class="description__parameters">Просторный зал площадью 900&nbsp;кв/м</span>
+              <div class="description__body">
                 <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
                 <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
               </div>
@@ -106,8 +108,10 @@
             <div class="subscriptions__cards cards" data-tabs="content">
               <ul class="cards__list is-active" data-tabs="element">
                 <li class="cards__item">
-                  <h3 class="cards__title">С&nbsp;тренером</h3>
-                  <span class="cards__explanation">12&nbsp;занятий</span>
+                  <div class="cards__body">
+                    <h3>С&nbsp;тренером</h3>
+                    <p>12&nbsp;занятий</p>
+                  </div>
                   <b class="cards__price" data-shadow="5000">
                     5000
                     <span class="cards__ruble">i</span>
@@ -115,8 +119,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Дневной</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;17:00</span>
+                  <div class="cards__body">
+                    <h3>Дневной</h3>
+                    <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="1700">
                     1700
                     <span class="cards__ruble">i</span>
@@ -124,8 +130,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Полный день</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;22:00</span>
+                  <div class="cards__body">
+                    <h3>Полный день</h3>
+                    <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="2700">
                     2700
                     <span class="cards__ruble">i</span>
@@ -135,8 +143,10 @@
               </ul>
               <ul class="cards__list" data-tabs="element">
                 <li class="cards__item">
-                  <h3 class="cards__title">С&nbsp;тренером</h3>
-                  <span class="cards__explanation">12&nbsp;занятий</span>
+                  <div class="cards__body">
+                    <h3>С&nbsp;тренером</h3>
+                    <p>12&nbsp;занятий</p>
+                  </div>
                   <b class="cards__price" data-shadow="25000">
                     25000
                     <span class="cards__ruble">i</span>
@@ -144,8 +154,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Дневной</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;17:00</span>
+                  <div class="cards__body">
+                    <h3>Дневной</h3>
+                    <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="8500">
                     8500
                     <span class="cards__ruble">i</span>
@@ -153,8 +165,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Полный день</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;22:00</span>
+                  <div class="cards__body">
+                    <h3>Полный день</h3>
+                    <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="13500">
                     13500
                     <span class="cards__ruble">i</span>
@@ -164,8 +178,10 @@
               </ul>
               <ul class="cards__list" data-tabs="element">
                 <li class="cards__item">
-                  <h3 class="cards__title">С&nbsp;тренером</h3>
-                  <span class="cards__explanation">12&nbsp;занятий</span>
+                  <div class="cards__body">
+                    <h3>С&nbsp;тренером</h3>
+                    <p>12&nbsp;занятий</p>
+                  </div>
                   <b class="cards__price" data-shadow="50000">
                     50000
                     <span class="cards__ruble">i</span>
@@ -173,8 +189,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Дневной</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;17:00</span>
+                  <div class="cards__body">
+                    <h3>Дневной</h3>
+                    <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="17000">
                     17000
                     <span class="cards__ruble">i</span>
@@ -182,8 +200,10 @@
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
-                  <h3 class="cards__title">Полный день</h3>
-                  <span class="cards__explanation">с&nbsp;8:00 до&nbsp;22:00</span>
+                  <div class="cards__body">
+                    <h3>Полный день</h3>
+                    <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
                   <b class="cards__price" data-shadow="27000">
                     27000
                     <span class="cards__ruble">i</span>
@@ -208,7 +228,7 @@
                     </div>
                   </div>
                   <div class="competitions__time">
-                    <p class="competitions__subtitle">Время</p>
+                    <p class="competitions__subtitle competitions__subtitle--time">Время</p>
                     <span class="competitions__time-text">12:00</span>
                   </div>
                 </div>
@@ -492,10 +512,12 @@
                 <ul class="faq__questions-list is-active" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Как стать членом фитнес-центра?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Как стать членом фитнес-центра?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
                       </p>
@@ -503,10 +525,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Где можно посмотреть расписание?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Где можно посмотреть расписание?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
                       </p>
@@ -514,10 +538,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
                       </p>
@@ -525,10 +551,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
                       </p>
@@ -538,10 +566,12 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
@@ -549,10 +579,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Можно&nbsp;ли заморозить абонемент?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Можно&nbsp;ли заморозить абонемент?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
@@ -560,10 +592,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
@@ -571,10 +605,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
@@ -584,10 +620,12 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
                       </p>
@@ -595,10 +633,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
                       </p>
@@ -606,10 +646,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
                       </p>
@@ -617,10 +659,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Есть&nbsp;ли в&nbsp;центре детская комната?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Есть&nbsp;ли в&nbsp;центре детская комната?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
                       </p>
@@ -630,10 +674,12 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Есть в&nbsp;фитнес-центре дресс-код?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Есть в&nbsp;фитнес-центре дресс-код?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).
                       </p>
@@ -641,10 +687,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).
                       </p>
@@ -652,10 +700,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Какие дополнительные правила посещения центра?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Какие дополнительные правила посещения центра?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).
                       </p>
@@ -663,10 +713,12 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <h3 class="faq__subtitle" data-accordion="button">Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</h3>
+                      <div class="faq__body-subtitle" data-accordion="button">
+                        <h3>Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</h3>
+                      </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                     </div>
-                    <div class="faq__body" data-accordion="content">
+                    <div class="faq__body-text" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).
                       </p>
@@ -749,7 +801,7 @@
               <h2 class="contacts__title title">Контакты</h2>
               <address class="contacts__content">
                 <ul class="contacts__list">
-                  <li class="contacts__item">
+                  <li class="contacts__item contacts__item--left">
                     <p class="contacts__subtitle">Адрес:</p>
                     <p class="contacts__text">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
                   </li>
@@ -757,11 +809,11 @@
                     <p class="contacts__subtitle">Телефон:</p>
                     <a class="contacts__text" href="tel:88005555555">8-800-555-55-55</a>
                   </li>
-                  <li class="contacts__item contacts__item--schedule">
+                  <li class="contacts__item contacts__item--left contacts__item--schedule">
                     <p class="contacts__subtitle">График работы:</p>
                     <p class="contacts__text">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
                   </li>
-                  <li class="contacts__item">
+                  <li class="contacts__item contacts__item--email">
                     <p class="contacts__subtitle">Email:</p>
                     <a href="mailto:omsk@supergym.ru" class="contacts__text">omsk@supergym.ru</a>
                   </li>
@@ -774,7 +826,7 @@
       <footer class="footer">
         <div class="footer__container container">
           <a class="footer__logo-link" href="#!">
-            <img src="./img/logo/logo.svg" width="88" height="17" alt="Логотип сайта SUPERGYM.">
+            <img src="./img/logo/logo.svg" width="86" height="17" alt="Логотип сайта SUPERGYM.">
           </a>
           <ul class="footer__list">
             <li class="footer__item footer__item--services">

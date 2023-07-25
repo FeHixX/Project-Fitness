@@ -62,7 +62,7 @@
 .custom-input input {
   padding: 5px 0;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 150%;
   color: $color-default-white;
   background-color: $color-transparent;
   border: none;
@@ -78,6 +78,6 @@
 .custom-input .is-invalid {
   display: flex;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 150%;
   color: $color-torch-red-light;
 }

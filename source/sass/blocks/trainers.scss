@@ -12,7 +12,7 @@
 }
 
 .trainers__title {
-  margin: 0 0 47px;
+  margin: 0 0 47px 2px;
 
   @include vp-1199 {
     margin: 0 0 31px;
@@ -20,7 +20,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 42px;
+    margin: 0 1px 42px 0;
   }
 }
 
@@ -40,8 +40,8 @@
   }
 
   &::after {
-    left: 100%;
     right: -50vw;
+    left: 100%;
   }
 
   @media (min-width: 1310px) {
@@ -123,19 +123,31 @@
   position: absolute;
   right: 0;
   bottom: 22px;
-  left: 0;
+  left: 1px;
   margin: 0;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
   text-align: center;
+
+  @include vp-1199 {
+    left: 8px;
+  }
 }
 
 .trainers__specialization {
-  margin: 0 0 29px;
-  line-height: 24px;
+  margin: 0 0 33px;
+  line-height: 150%;
   text-align: center;
   color: $color-spindle;
   opacity: 0;
+
+  @include vp-1199 {
+    margin-right: 8px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
 
 .trainers__body ul {
@@ -156,7 +168,7 @@
 .trainers__body li {
   list-style-type: disc;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
 }
 
 .trainers__button {
@@ -172,6 +184,16 @@
 
   &--next {
     right: -64px;
+  }
+
+  @media (min-width: 1310px) {
+    &--prev {
+      left: -75px;
+    }
+
+    &--next {
+      right: -75px;
+    }
   }
 
   @include vp-1199 {
@@ -193,16 +215,6 @@
       right: -47px;
     }
   }
-
-  @media (min-width: 1310px) {
-    &--prev {
-      left: -75px;
-    }
-
-    &--next {
-      right: -75px;
-    }
-  }
 }
 
 .trainers__item:hover * {
@@ -220,5 +232,14 @@
 
 .trainers__item:hover .trainers__subtitle {
   position: static;
+  margin: 0 0 -4px;
   animation: opacity 0.3s;
+
+  @include vp-1199 {
+    margin-right: 9px;
+  }
+
+  @include vp-767 {
+    margin-right: 1px;
+  }
 }

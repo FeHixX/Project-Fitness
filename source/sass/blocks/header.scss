@@ -17,7 +17,7 @@
   padding-top: 30px;
 
   @include vp-1199 {
-    padding-top: 34px;
+    padding-top: 35px;
   }
 
   @include vp-767 {
@@ -26,7 +26,18 @@
 }
 
 .header__logo-link {
+  align-self: flex-end;
+  transform: translate(1px, 2px);
   transition: opacity $trans-default;
+
+  @include vp-1199 {
+    align-self: center;
+    transform: translateY(0);
+  }
+
+  @include vp-767 {
+    transform: translateY(-1px);
+  }
 
   @include hover-focus {
     outline: none;
@@ -39,35 +50,37 @@
 }
 
 .header__logo-link img {
-  width: 119px;
+  width: 118px;
   height: 23px;
 
   @include vp-1199 {
     width: 81px;
-    height: 16px;
+    height: 15px;
   }
 
   @include vp-767 {
     width: 67px;
-    height: 13px;
+    height: 14px;
   }
 }
 
 .header__tel {
+  margin-right: 1px;
   font-weight: 600;
   font-size: 26px;
   font-family: $ff-alumni-sans;
   color: $color-default-white;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.76px;
   transition: opacity $trans-default;
 
   @include vp-1199 {
     font-weight: 700;
     font-size: 24px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.46px;
   }
 
   @include vp-767 {
+    margin-right: 0;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.4px;

@@ -3,11 +3,11 @@
   background: $color-venetian-red $circular-gradient;
 
   @include vp-1199 {
-    padding: 63px 0 82px;
+    padding: 64px 0 82px;
   }
 
   @include vp-767 {
-    padding: 40px 0 81px;
+    padding: 40px 0 80px;
   }
 }
 
@@ -18,63 +18,77 @@
 
   @include vp-1199 {
     justify-content: space-evenly;
-    padding-top: 19px;
+    padding-top: 18px;
     gap: 0 30px;
   }
 
   @include vp-767 {
-    padding-top: 19px;
     display: block;
+    padding-top: 18px;
   }
 }
 
 .hero__content {
   position: relative;
-  display: flex;
-  gap: 0 16px;
+  display: grid;
+  align-items: start;
+  gap: 0 18px;
+  grid-template-columns: 132px 245px;
+  grid-template-rows: min-content;
 
   @include vp-1199 {
-    gap: 0 20px;
+    gap: 0 11px;
+    grid-template-columns: 113px 200px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.hero__text {
+.hero__body-text p:first-child {
+  margin-top: 295px;
+
+  @include vp-1199 {
+    margin-top: 186px;
+  }
+
+  @include vp-767 {
+    margin-top: 175px;
+    transform: translateX(-1px);
+  }
+}
+
+.hero__body-text p {
   width: 132px;
-  margin: 295px 0 0;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   text-align: right;
 
   @include vp-1199 {
     width: 113px;
-    margin: 186px 0 0;
   }
 
   @include vp-767 {
     position: absolute;
-    margin: 174px 0 0;
   }
 }
 
-.hero__right-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 247px;
-  padding: 101px 0 0;
+.hero__body-title {
+  margin: 101px 0 50px;
 
   @include vp-1199 {
-    width: 191px;
-    padding: 50px 0 0;
+    margin: 50px 0 38px;
   }
 
   @include vp-767 {
-    width: 100%;
+    margin: 50px 0 25px;
   }
 }
 
-.hero__city {
-  margin: 0 49px 14px 0;
+.hero__body-title p {
+  margin: 0 50px 14px 0;
   font-weight: 600;
   font-size: 48px;
   font-family: $ff-alumni-sans;
@@ -94,33 +108,31 @@
   }
 }
 
-.hero__title {
-  margin: 0 0 50px;
-  font-weight: 700;
+.hero__body-title h1 {
+  margin: 0;
   font-size: 92px;
   font-family: $ff-alumni-sans;
   text-align: right;
   text-transform: uppercase;
-  letter-spacing: 4.6px;
+  letter-spacing: 4.36px;
+  -webkit-text-stroke-width: 1.5px;
 
   @include vp-1199 {
-    width: 200px;
-    margin: 0 0 38px;
     font-size: 72px;
-    line-height: 86px;
     text-align: end;
     text-transform: inherit;
-    letter-spacing: 3.6px;
-  }
-
-  @include vp-767 {
-    margin: 0 0 24px;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 2.5px;
   }
 }
 
 .hero__button {
+  grid-area: 2/2/3/3;
+  justify-self: end;
+
   @include vp-767 {
-    width: 100%;
+    grid-area: 2/1/3/3;
+    justify-self: stretch;
   }
 }
 

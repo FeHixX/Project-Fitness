@@ -5,9 +5,9 @@
   &::before {
     content: "";
     position: absolute;
-    right: -108px;
+    right: -107px;
     bottom: -95px;
-    width: 321px;
+    width: 318px;
     height: 384px;
     background: url("../img/subscriptions/weight-pancakes-desktop@1x.png") center / cover no-repeat;
     transform: rotate(150deg);
@@ -27,10 +27,10 @@
 
   @include vp-1199 {
     &::before {
-      right: -9px;
+      right: -10px;
       bottom: -75px;
-      width: 289px;
-      height: 345px;
+      width: 290px;
+      height: 342px;
     }
   }
 
@@ -55,7 +55,7 @@
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 69px;
+    padding-bottom: 68px;
   }
 }
 
@@ -94,7 +94,7 @@
   margin: 0 0 38px;
   padding: 0;
   list-style-type: none;
-  gap: 0 46px;
+  gap: 0 47px;
 
   @include vp-1199 {
     margin: 0 0 44px;
@@ -103,7 +103,7 @@
 
   @include vp-767 {
     margin: 0 0 34px;
-    gap: 0 45px;
+    gap: 0 46px;
   }
 }
 
@@ -111,7 +111,7 @@
   position: relative;
   padding: 13px 0;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 150%;
   color: $color-sapphire;
   background-color: $color-transparent;
   border: none;
@@ -127,15 +127,22 @@
     height: 2px;
   }
 
+  &.is-active {
+    opacity: 1;
+
+    &::before {
+      background-color: $color-crimson;
+    }
+  }
+
   @include vp-1199 {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
   }
 
   @include vp-767 {
     padding: 14px 0;
     font-size: 16px;
-    line-height: 24px;
   }
 
   @include hover-focus-active {
@@ -150,13 +157,5 @@
   @include disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-
-  &.is-active {
-    opacity: 1;
-
-    &::before {
-      background-color: $color-crimson;
-    }
   }
 }

@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-top: 93px;
+    padding-top: 92px;
     padding-bottom: 100px;
   }
 
@@ -14,11 +14,11 @@
 }
 
 .stocks__title {
-  margin: 0 0 34px;
+  margin: 0 0 33px;
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
   }
 
   @include vp-767 {
@@ -83,7 +83,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 280px;
-  padding: 33px 45px 45px;
+  padding: 34px 45px 45px;
   color: $color-default-white;
   background-color: $color-torch-red;
 
@@ -100,10 +100,14 @@
 .stocks__text-main {
   display: flex;
   flex-direction: column;
-  margin: 0 0 25px;
+  margin: 0 0 24px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 44px;
+  line-height: 156%;
+
+  @include vp-1199 {
+    margin: 0 0 25px;
+  }
 
   @include vp-767 {
     margin: 0 0 20px;
@@ -114,7 +118,11 @@
 .stocks__value-main {
   font-weight: 700;
   font-size: 70px;
-  line-height: 59px;
+  line-height: 85%;
+
+  @include vp-1199 {
+    margin-top: -1px;
+  }
 }
 
 .stocks__main-body {
@@ -130,7 +138,7 @@
   margin-top: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 139%;
 }
 
 .stocks__main-body > :last-child {
@@ -188,7 +196,7 @@
   align-items: flex-start;
   min-height: 197px;
   margin: 7px;
-  padding: 22px 28px 28px;
+  padding: 18px 28px 28px;
   color: $color-resolution-blue;
   background-color: $color-default-white;
 
@@ -202,7 +210,7 @@
 
   @include vp-767 {
     align-items: center;
-    padding: 33px 28px 39px;
+    padding: 29px 28px 39px;
   }
 }
 
@@ -215,14 +223,23 @@
 }
 
 .stocks__item-body h3 {
-  margin: 0 0 8px;
+  margin: 0 0 3px;
   font-weight: 700;
   font-size: 26px;
+  line-height: 150%;
+
+  @include vp-1199 {
+    margin: 0 0 4px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 4px;
+  }
 }
 
 .stocks__item-body p {
   margin-top: 0;
-  line-height: 22px;
+  line-height: 140%;
 }
 
 .stocks__item-body > :last-child {

@@ -11,13 +11,13 @@
 
   @include vp-1199 {
     padding-top: 92px;
-    padding-bottom: 92px;
+    padding-bottom: 93px;
   }
 
   @include vp-767 {
     align-items: stretch;
     padding-top: 64px;
-    padding-bottom: 63px;
+    padding-bottom: 62px;
   }
 }
 
@@ -26,7 +26,7 @@
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 42px;
+    margin: 0 0 41px;
   }
 
   @include vp-767 {
@@ -43,7 +43,7 @@
   grid-template-columns: 340px 240px 340px;
 
   @include vp-1199 {
-    gap: 42px 30px;
+    gap: 43px 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -59,13 +59,14 @@
   gap: 0 30px;
 
   &--square {
-    padding: 0 0 0 19px;
+    align-self: start;
+    margin: 0 0 75px 19px;
 
     &::before {
       content: "";
       position: absolute;
-      bottom: -1px;
-      left: 0;
+      bottom: -77px;
+      left: -19px;
       width: 340px;
       height: 2px;
       background-color: rgba($color-crimson, 0.2);
@@ -73,10 +74,13 @@
   }
 
   &--parking {
+    align-self: start;
+    margin: 0 0 75px;
+
     &::before {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: -77px;
       left: 0;
       width: 340px;
       height: 2px;
@@ -87,24 +91,25 @@
   &--main {
     display: flex;
     flex-direction: column;
-    padding: 61px 34px 66px;
+    margin: 7px 0 8px;
+    padding: 53px 34px 58px;
     color: $color-ghost-white;
     background-color: $color-resolution-blue;
     grid-area: 1/2/3/3;
   }
 
   &--comfort {
-    align-self: end;
-    padding: 0 0 0 19px;
+    margin: 75px 0 0 19px;
   }
 
   &--experience {
-    align-self: end;
+    margin: 75px 0 0;
+    gap: 0 32px;
   }
 
   @include vp-1199 {
     &--square {
-      padding: 0;
+      margin: 0;
 
       &::before {
         content: none;
@@ -112,6 +117,9 @@
     }
 
     &--parking {
+      margin: 0;
+      gap: 0 29px;
+
       &::before {
         content: none;
       }
@@ -119,12 +127,17 @@
 
     &--main {
       margin: 0 118px;
-      padding: 32px 135px 37px;
+      padding: 32px 135px 38px;
       grid-area: 2/1/3/-1;
     }
 
     &--comfort {
-      padding: 0;
+      margin: -1px 0 0;
+    }
+
+    &--experience {
+      margin: -1px 0 0;
+      gap: 0 31px;
     }
   }
 
@@ -133,21 +146,21 @@
     padding: 0 11px 0;
 
     &--square {
-      margin: 0 0 40px;
+      margin: 0 0 39px;
     }
 
     &--parking {
-      margin: 0 0 43px;
+      margin: 0 0 42px;
     }
 
     &--main {
       margin: 0 -15px 46px;
-      padding: 39px 55px 43px;
+      padding: 41px 55px 43px;
       grid-area: auto;
     }
 
     &--comfort {
-      margin: 0 0 41px;
+      margin: 0 0 40px;
     }
   }
 }
@@ -155,26 +168,26 @@
 .advantages__value {
   display: inline-flex;
   flex-direction: column;
-  margin: 0;
+  margin: 1px 0 0;
   font-weight: 700;
   font-size: 71px;
-  line-height: 61px;
+  line-height: 86%;
   color: $color-transparent;
   background-image: $number-gradient;
   background-clip: text;
-  gap: 4px 0;
+  gap: 3px 0;
 
   @include vp-1199 {
-    margin: 5px 0 0;
+    margin: 6px 0 0;
     font-size: 58px;
-    line-height: 46px;
+    line-height: 80%;
   }
 
   @include vp-767 {
     align-items: center;
     align-self: center;
     width: 150px;
-    margin: 0 0 9px;
+    margin: 1px 0 5px;
   }
 }
 
@@ -188,26 +201,25 @@
 .advantages__body h3 {
   margin: 0 0 6px;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 150%;
 
   @include vp-1199 {
     margin: 0 0 3px;
     font-size: 20px;
-    line-height: 30px;
   }
 }
 
 .advantages__body p {
   margin-top: 0;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 140%;
 }
 
 .advantages__body-main p {
   margin-top: 0;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 150%;
   text-align: center;
 }
 
@@ -220,43 +232,48 @@
   margin: 0 0 32px;
   font-weight: 700;
   font-size: 26px;
-  line-height: 39px;
+  line-height: 150%;
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 12px;
+    margin: 0 0 14px;
     font-size: 22px;
   }
 
   @include vp-767 {
-    margin: 0 0 6px;
+    margin: 0 0 9px;
   }
 }
 
 .advantages__measurement {
+  margin: -1px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   color: $color-persian-blue;
 
   &--main {
     display: block;
+    margin: 0 6px 1px 0;
     font-weight: 700;
     font-size: 74px;
-    line-height: 76px;
+    line-height: 103%;
     color: $color-default-white;
   }
 
   @include vp-1199 {
-    margin: 0 0 -5px;
+    &--main {
+      margin: 0 6px -3px 0;
+    }
   }
 
   @include vp-767 {
     text-align: center;
 
     &--main {
-      line-height: 69px;
+      margin: 00 4px -3px 0;
+      line-height: 93%;
     }
   }
 }

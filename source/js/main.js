@@ -3,11 +3,9 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './vendor/tabs/init-tabs';
 import {initAccordions} from './vendor/accordion/init-accordion';
 
-import {isButtonSmoothScroll} from './modules/smooth-scroll';
-import {isButtonPlayVideo} from './modules/description/player';
-import {initSliderTrainers} from './modules/trainers/slider';
-import {isMouseCardHover} from './modules/subscriptions/cards';
-import {initSliderReviews} from './modules/reviews/slider';
+import {addPlayer} from './modules/description/player';
+import {addSliderTrainers} from './modules/trainers/slider';
+import {addSliderReviews} from './modules/reviews/slider';
 
 // ---------------------------------
 
@@ -31,11 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initAccordions();
 
-    isButtonSmoothScroll();
-    isButtonPlayVideo();
-    initSliderTrainers();
-    isMouseCardHover();
-    initSliderReviews();
+    addPlayer();
+    addSliderTrainers();
+    addSliderReviews();
   });
 });
 
