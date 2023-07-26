@@ -1804,7 +1804,6 @@ button,
 }
 
 .hero__body-text p {
-  width: 132px;
   font-size: 14px;
   line-height: 150%;
   text-align: right;
@@ -3875,10 +3874,6 @@ button,
     margin-top: 186px;
   }
 
-  .hero__body-text p {
-    width: 113px;
-  }
-
   .hero__body-title {
     margin: 50px 0 0;
   }
@@ -4493,8 +4488,8 @@ button,
 
   .hero__content {
     gap: 25px 0;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 113px 1fr;
+    grid-template-columns: 113px 1fr;
   }
 
   .hero__body-text p:first-child {
