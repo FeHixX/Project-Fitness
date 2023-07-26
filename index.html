@@ -9,7 +9,6 @@
     <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./favicon/apple.png">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="preload" href="./fonts/rouble/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans/alumni-sans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -28,11 +27,11 @@
           <a class="header__logo-link" href="#!">
             <img src="./img/logo/logo.svg" width="118" height="23" alt="Логотип сайта SUPERGYM.">
           </a>
-          <a class="header__tel" href="tel:+88005555555">8-800-555-55-55</a>
+          <div class="header__content">
+            <a class="header__tel" href="tel:+88005555555">8-800-555-55-55</a>
+          </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="main__hero hero">
+        <section class="hero">
           <div class="hero__container container">
             <div class="hero__content">
               <div class="hero__body-text">
@@ -52,6 +51,8 @@
             </picture>
           </div>
         </section>
+      </header>
+      <main class="main">
         <section class="description">
           <div class="description__container container">
             <div class="description__content">
@@ -114,7 +115,9 @@
                   </div>
                   <b class="cards__price" data-shadow="5000">
                     5000
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -125,7 +128,9 @@
                   </div>
                   <b class="cards__price" data-shadow="1700">
                     1700
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -136,7 +141,9 @@
                   </div>
                   <b class="cards__price" data-shadow="2700">
                     2700
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -149,7 +156,9 @@
                   </div>
                   <b class="cards__price" data-shadow="25000">
                     25000
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -160,7 +169,9 @@
                   </div>
                   <b class="cards__price" data-shadow="8500">
                     8500
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -171,7 +182,9 @@
                   </div>
                   <b class="cards__price" data-shadow="13500">
                     13500
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -184,7 +197,9 @@
                   </div>
                   <b class="cards__price" data-shadow="50000">
                     50000
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -195,7 +210,9 @@
                   </div>
                   <b class="cards__price" data-shadow="17000">
                     17000
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -206,7 +223,9 @@
                   </div>
                   <b class="cards__price" data-shadow="27000">
                     27000
-                    <span class="cards__ruble">i</span>
+                    <svg class="cards__icon" width="30" height="42" aria-hidden="true" focusable="false">
+                      <use href="./img/sprite.svg#rouble"></use>
+                    </svg>
                   </b>
                   <a class="cards__button button button--secondary" href="#!">Купить абонемент</a>
                 </li>
@@ -512,7 +531,7 @@
                 <ul class="faq__questions-list is-active" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Как стать членом фитнес-центра?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -525,7 +544,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Где можно посмотреть расписание?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -538,7 +557,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -551,7 +570,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -566,7 +585,7 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -579,7 +598,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Можно&nbsp;ли заморозить абонемент?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -592,7 +611,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -605,7 +624,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -620,7 +639,7 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -633,7 +652,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -646,7 +665,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -659,7 +678,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Есть&nbsp;ли в&nbsp;центре детская комната?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -674,7 +693,7 @@
                 <ul class="faq__questions-list" data-accordion="parent" data-tabs="element">
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Есть в&nbsp;фитнес-центре дресс-код?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -687,7 +706,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -700,7 +719,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Какие дополнительные правила посещения центра?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -713,7 +732,7 @@
                   </li>
                   <li class="faq__question-item" data-accordion="element">
                     <div class="faq__subtitle-container">
-                      <div class="faq__body-subtitle" data-accordion="button">
+                      <div class="faq__body-subtitle">
                         <h3>Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</h3>
                       </div>
                       <button class="faq__button" data-accordion="button" aria-label="Нажмите чтобы раскрыть ответ."></button>
@@ -832,7 +851,7 @@
             <li class="footer__item footer__item--services">
               <a class="footer__link" href="#!">Услуги</a>
             </li>
-            <li class="footer__item footer__item--subscriptions">
+            <li class="footer__item">
               <a class="footer__link" href="#!">Абонементы</a>
             </li>
             <li class="footer__item footer__item--stocks">
@@ -841,7 +860,7 @@
             <li class="footer__item footer__item--trainers">
               <a class="footer__link" href="#!">Тренеры</a>
             </li>
-            <li class="footer__item footer__item--schedule">
+            <li class="footer__item">
               <a class="footer__link" href="#!">Расписание</a>
             </li>
           </ul>
