@@ -71,7 +71,11 @@
 
   &::placeholder {
     color: $color-default-white;
-    opacity: 0.5;
+  }
+
+  &:focus::-webkit-input-placeholder,
+  &:active::-webkit-input-placeholder {
+    color: transparent;
   }
 }
 

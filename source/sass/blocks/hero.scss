@@ -1,30 +1,20 @@
-.hero {
-  padding: 61px 0 41px;
-  background: $color-venetian-red $circular-gradient;
-
-  @include vp-1199 {
-    padding: 64px 0 82px;
-  }
-
-  @include vp-767 {
-    padding: 40px 0 80px;
-  }
-}
-
 .hero__container {
   display: flex;
+  padding-bottom: 41px;
   color: $color-default-white;
   gap: 0 65px;
 
   @include vp-1199 {
     justify-content: space-evenly;
     padding-top: 18px;
+    padding-bottom: 82px;
     gap: 0 30px;
   }
 
   @include vp-767 {
     display: block;
     padding-top: 18px;
+    padding-bottom: 80px;
   }
 }
 
@@ -32,18 +22,18 @@
   position: relative;
   display: grid;
   align-items: start;
-  gap: 0 18px;
+  gap: 50px 18px;
   grid-template-columns: 132px 245px;
   grid-template-rows: min-content;
 
   @include vp-1199 {
-    gap: 0 11px;
+    gap: 38px 11px;
     grid-template-columns: 113px 200px;
   }
 
   @include vp-767 {
-    gap: 0;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 0;
+    grid-template-columns: 113px 1fr;
   }
 }
 
@@ -61,29 +51,20 @@
 }
 
 .hero__body-text p {
-  width: 132px;
   font-size: 14px;
   line-height: 150%;
   text-align: right;
-
-  @include vp-1199 {
-    width: 113px;
-  }
-
-  @include vp-767 {
-    position: absolute;
-  }
 }
 
 .hero__body-title {
-  margin: 101px 0 50px;
+  margin: 101px 0 0;
 
   @include vp-1199 {
-    margin: 50px 0 38px;
+    margin: 50px 0 0;
   }
 
   @include vp-767 {
-    margin: 50px 0 25px;
+    margin: 50px 0 0;
   }
 }
 
@@ -123,6 +104,10 @@
     text-transform: inherit;
     letter-spacing: 3px;
     -webkit-text-stroke-width: 2.5px;
+  }
+
+  @include vp-767 {
+    margin-left: -10px;
   }
 }
 

@@ -71,21 +71,6 @@
   }
 }
 
-.subscriptions__tab-item {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -23px;
-    width: calc(100% + 45px);
-    height: 2px;
-    background-color: $color-grey;
-    opacity: 0.2;
-  }
-}
-
 .subscriptions__tabs {
   position: relative;
   display: flex;
@@ -95,6 +80,16 @@
   padding: 0;
   list-style-type: none;
   gap: 0 47px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-grey;
+    opacity: 0.2;
+  }
 
   @include vp-1199 {
     margin: 0 0 44px;
@@ -157,5 +152,11 @@
   @include disabled {
     opacity: 0.3;
     pointer-events: none;
+  }
+}
+
+.subscriptions__cards {
+  @include vp-767 {
+    align-self: stretch;
   }
 }
