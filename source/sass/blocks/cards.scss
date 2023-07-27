@@ -164,3 +164,7 @@
     opacity: 1;
   }
 }
+
+.cards__item:hover .cards__button:active {
+  color: rgba($color-default-white, 0.7);
+}
